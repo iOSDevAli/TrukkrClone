@@ -53,7 +53,8 @@ class VehicleStatusCard extends StatelessWidget {
                                 : [
                                     PieChartSectionData(
                                       value: 1,
-                                      color: AppColors.noData.withValues(alpha: 0.9),
+                                      // color: AppColors.noData.withValues(alpha: 0.9),
+                                      color: AppColors.noData.withValues(alpha: 0.3),
                                       radius: 34,
                                       showTitle: false,
                                     ),
@@ -81,8 +82,10 @@ class VehicleStatusCard extends StatelessWidget {
                             child: Text(
                               '$_total',
                               style: const TextStyle(
+                                //fontSize: 14,
                                 fontSize: 12,
-                                color: AppColors.textSecondary,
+                                //color: AppColors.textSecondary,
+                                color: Colors.black,
                               ),
                             ),
                           ),
@@ -91,12 +94,12 @@ class VehicleStatusCard extends StatelessWidget {
                   ),
                 ),
                 Expanded(
-                  flex: 4,
+                  flex: 2,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: statuses
                         .map((s) => Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 16),
+                              padding: const EdgeInsets.symmetric(vertical: 6),
                               child: Row(
                                 children: [
                                   Icon(Icons.autorenew, size: 16, color: s.color),

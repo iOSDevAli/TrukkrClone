@@ -25,7 +25,8 @@ class _DiagonalPatternPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final bands = [
-      (color: const Color(0xFFEDEBE7), offset: 0.55),
+      //(color: const Color(0xFFEDEBE7), offset: 0.55),
+      (color: const Color(0xFFEDEBE4), offset: 0.55),
       (color: const Color(0xFFE3DED4), offset: 0.68),
       (color: const Color(0xFFEFEAE1), offset: 0.80),
       (color: const Color(0xFFE0D9CB), offset: 0.92),

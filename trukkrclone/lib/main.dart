@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'screens/dashboard_screen.dart';
+//import 'screens/dashboard_screen.dart';
+//import 'screens/main_shell.dart';
+import 'screens/splash_screen.dart';
 import 'theme/app_theme.dart';
 
 void main() {
@@ -16,10 +18,14 @@ class MyApp extends StatelessWidget {
       title: 'Trukkr',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light,
-      home: const DashboardScreen(),
+      //home: const DashboardScreen(),
+      //home: const MainShell(),
+      home: const SplashScreen(),
     );
   }
 }
+
+//AIzaSyBRM0a_GoMXhm3xYk06LTSPFfkGCJp2-VQ -> api key google maps
 
 // void main() {
 //   runApp(const MyApp());
